@@ -49,3 +49,7 @@ Solução com Actor Based
 
     $ ruby actor/iniciar_jantar.rb
 
+
+## License
+
+Pode baixar, alterar fazer fork :) é para estudo!
