@@ -1,7 +1,7 @@
 require 'celluloid'
 require_relative 'mesa'
 require_relative 'garcom'
-require_relative 'pauzinho'
+require_relative 'talher'
 
 class Filosofo
     include Celluloid
@@ -13,8 +13,8 @@ class Filosofo
     
     def jantar(mesa, posicao, garcom)
         @garcom = garcom
-        @pauzinho_da_esquerda  = mesa.pauzinho_da_esquerda posicao
-        @pauzinho_da_direita = mesa.pauzinho_da_direita posicao
+        @talher_da_esquerda  = mesa.talher_da_esquerda posicao
+        @talher_da_direita = mesa.talher_da_direita posicao
     
         pensar
     end
@@ -27,30 +27,30 @@ class Filosofo
     end
     
     def comer
-        pegar_pauzinho
+        pegar_talher
 
         puts "#{@nome} está comendo."    
         sleep(rand)
 
-        soltar_pauzinho
+        soltar_talher
 
         @garcom.async.terminou_de_comer Actor.current
 
         pensar
     end
     
-    def pegar_pauzinho
-        @pauzinho_da_esquerda.pegar
-        @pauzinho_da_direita.pegar
+    def pegar_talher
+        @talher_da_esquerda.pegar
+        @talher_da_direita.pegar
     end
     
-    def soltar_pauzinho
-        @pauzinho_da_esquerda.soltar
-        @pauzinho_da_direita.soltar
+    def soltar_talher
+        @talher_da_esquerda.soltar
+        @talher_da_direita.soltar
     end
 
     def finalize
-        soltar_pauzinho
+        soltar_talher
     end
 
     def nome

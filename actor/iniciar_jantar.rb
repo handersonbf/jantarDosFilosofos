@@ -1,7 +1,7 @@
 require_relative 'filosofo'
 require_relative 'mesa'
 require_relative 'garcom'
-require_relative 'pauzinho'
+require_relative 'talher'
 
 class IniciarJantar
 

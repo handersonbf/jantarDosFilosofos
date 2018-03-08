@@ -1,6 +1,6 @@
 require_relative 'filosofo'
 require_relative 'mesa'
-require_relative 'pauzinho'
+require_relative 'talher'
 
 class Garcom
     def initialize(capacidade)
@@ -10,8 +10,8 @@ class Garcom
 
     def servir(mesa, filosofo)
         @mutex.synchronize do
-            sleep(rand) while mesa.pauzinho_sendo_utilizado >= @capacidade 
-            filosofo.pegar_pauzinho
+            sleep(rand) while mesa.talher_sendo_utilizado >= @capacidade 
+            filosofo.pegar_talher
         end
 
         filosofo.comer

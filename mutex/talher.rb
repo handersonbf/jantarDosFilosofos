@@ -2,7 +2,7 @@ require_relative 'filosofo'
 require_relative 'mesa'
 require_relative 'garcom'
 
-class Pauzinho 
+class Talher 
     
     def initialize
         @mutex = Mutex.new
@@ -16,7 +16,7 @@ class Pauzinho
         @mutex.unlock
 
         rescue ThreadError
-        puts "Tentando soltar um pauzinho não adquirido"
+        puts "Tentando soltar um talher não adquirido"
     end
 
     def em_uso?

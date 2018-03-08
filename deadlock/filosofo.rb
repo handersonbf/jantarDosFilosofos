@@ -1,7 +1,7 @@
 
 require_relative 'mesa'
 require_relative 'garcom'
-require_relative 'pauzinho'
+require_relative 'talher'
 class Filosofo
    
     def initialize(nome)
@@ -9,8 +9,8 @@ class Filosofo
     end
     
     def jantar(mesa, posicao)
-        @pauzinho_da_esquerda  = mesa.pauzinho_da_esquerda(posicao)
-        @pauzinho_da_direita = mesa.pauzinho_da_direita(posicao)
+        @talher_da_esquerda  = mesa.talher_da_esquerda(posicao)
+        @talher_da_direita = mesa.talher_da_direita(posicao)
     
         loop do
             pensar
@@ -23,18 +23,18 @@ class Filosofo
     end
     
     def comer
-        pegar_pauzinho
+        pegar_talher
         puts "#{@nome} está comendo."    
-        soltar_pauzinho
+        soltar_talher
     end
     
-    def pegar_pauzinho
-        @pauzinho_da_esquerda.pegar
-        @pauzinho_da_direita.pegar
+    def pegar_talher
+        @talher_da_esquerda.pegar
+        @talher_da_direita.pegar
     end
     
-    def soltar_pauzinho
-        @pauzinho_da_esquerda.soltar
-        @pauzinho_da_direita.soltar
+    def soltar_talher
+        @talher_da_esquerda.soltar
+        @talher_da_direita.soltar
     end
 end

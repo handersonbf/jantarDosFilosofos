@@ -1,7 +1,7 @@
 require 'celluloid'
 require_relative 'filosofo'
 require_relative 'mesa'
-require_relative 'pauzinho'
+require_relative 'talher'
 
 class Garcom
     include Celluloid
@@ -20,7 +20,7 @@ class Garcom
 
     def terminou_de_comer(filosofo)
         puts "Filosofo #{filosofo.nome} terminou de comer!"
-        
+
         @comendo.delete filosofo
     end
 end

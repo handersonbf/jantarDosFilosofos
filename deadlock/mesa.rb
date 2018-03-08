@@ -1,23 +1,23 @@
 require_relative 'filosofo'
 
 require_relative 'garcom'
-require_relative 'pauzinho'
+require_relative 'talher'
 class Mesa
     def initialize(numero_assentos)
-        @pauzinho  = numero_assentos.times.map { Pauzinho.new }
+        @talher  = numero_assentos.times.map { Talher.new }
     end
 
-    def pauzinho_da_esquerda(position)
-        index = (position - 1) % @pauzinho.size
-        @pauzinho[index]
+    def talher_da_esquerda(position)
+        index = (position - 1) % @talher.size
+        @talher[index]
     end
 
-    def pauzinho_da_direita(position)
-        index = position % @pauzinho.size
-        @pauzinho[index]
+    def talher_da_direita(position)
+        index = position % @talher.size
+        @talher[index]
     end
 
-    def pauzinho_sendo_utilizado
-        @pauzinho.select { |f| f.em_uso? }.size
+    def talher_sendo_utilizado
+        @talher.select { |f| f.em_uso? }.size
     end
 end
