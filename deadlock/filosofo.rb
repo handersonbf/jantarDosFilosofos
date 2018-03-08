@@ -1,3 +1,7 @@
+
+require_relative 'mesa'
+require_relative 'garcom'
+require_relative 'pauzinho'
 class Filosofo
    
     def initialize(nome)
@@ -20,9 +24,7 @@ class Filosofo
     
     def comer
         pegar_pauzinho
-    
-        puts "#{@nome} está comendo."
-    
+        puts "#{@nome} está comendo."    
         soltar_pauzinho
     end
     

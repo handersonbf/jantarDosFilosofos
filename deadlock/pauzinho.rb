@@ -1,3 +1,7 @@
+require_relative 'filosofo'
+require_relative 'mesa'
+require_relative 'garcom'
+
 class Pauzinho 
     
     def initialize

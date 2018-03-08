@@ -1,3 +1,7 @@
+require_relative 'filosofo'
+
+require_relative 'garcom'
+require_relative 'pauzinho'
 class Mesa
     def initialize(numero_assentos)
         @pauzinho  = numero_assentos.times.map { Pauzinho.new }
@@ -14,6 +18,6 @@ class Mesa
     end
 
     def pauzinho_sendo_utilizado
-        @pauzinho.select { |f| f.in_use? }.size
+        @pauzinho.select { |f| f.em_uso? }.size
     end
 end
