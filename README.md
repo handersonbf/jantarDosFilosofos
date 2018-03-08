@@ -21,7 +21,7 @@ Acessando a pasta do projeto execute:
     $ bundle install
 
 
-##Estrutura
+## Estrutura
 
 Com DeadLock
 
@@ -35,7 +35,7 @@ Solução com Actor Based
 
     /actor
 
-##Para executar respectivamente
+## Para executar respectivamente
 
 Com DeadLock
 
