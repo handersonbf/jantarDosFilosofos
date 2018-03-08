@@ -8,7 +8,7 @@ class IniciarJantar
     def initialize
         puts "Iniciando o Jantar..........."
 
-        nomes = %w{Aristotle Schopenhauer}
+        nomes = %w{Aristotle Schopenhauer Descartes Agostino Hegel Platão Sócrates}
 
         filosofos = nomes.map { |nome| Filosofo.new(nome) }
 

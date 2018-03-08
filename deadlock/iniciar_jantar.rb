@@ -7,11 +7,11 @@ class IniciarJantar
 
     def initialize
         
-        names = %w{Aristotle Schopenhauer}
+        nomes = %w{Aristotle Schopenhauer Descartes Agostino Hegel Platão Sócrates}
         
-        names.map { |n| puts n}
+        nomes.map { |n| puts n}
 
-        filosofos = names.map { |name| Filosofo.new(name) }
+        filosofos = nomes.map { |name| Filosofo.new(name) }
        
         mesa  = Mesa.new(filosofos.size)
 
