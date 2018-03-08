@@ -1,2 +1,3 @@
-# ![Optional Text](dining.png)
+# ![Jantar][dining-raw]
 
+[dining-raw]:(dining.png)
