@@ -9,10 +9,14 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
-./Gemfile.lock 
-Gemfile.lock 
-/.DS_Store
-*.DS_Store
+rdoc/
+doc/
+pkg/
+.yardoc
+.bundle
+Gemfile.lock
+log
+.DS_Store
 # Used by dotenv library to load environment variables.
 # .env
 
