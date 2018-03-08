@@ -1,1 +1,1 @@
-# jantarDosFilosofos
+# ![jantarDosFilosofos][dining.png]
