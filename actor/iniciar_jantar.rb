@@ -19,7 +19,6 @@ class IniciarJantar
         filosofo.async.jantar(mesa, i, garcom) 
         end
 
-        #Eternamente comendo :D sem deadlock
         sleep
     end
 end
