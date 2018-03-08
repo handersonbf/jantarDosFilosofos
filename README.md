@@ -19,3 +19,33 @@ Faça um git clone no projeto na sua pasta de escolha:
 Acessando a pasta do projeto execute:
 
     $ bundle install
+
+
+##Estrutura
+
+Com DeadLock
+
+    /deadlock
+
+Solução com Mutex
+
+    /mutex
+
+Solução com Actor Based
+
+    /actor
+
+##Para executar respectivamente
+
+Com DeadLock
+
+    $ ruby deadlock/iniciar_jantar.rb
+
+Solução com Mutex
+
+    $ ruby mutex/iniciar_jantar.rb
+
+Solução com Actor Based
+
+    $ ruby actor/iniciar_jantar.rb
+
