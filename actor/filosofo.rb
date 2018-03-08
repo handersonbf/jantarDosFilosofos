@@ -7,15 +7,14 @@ class Filosofo
     include Celluloid
 
     def initialize(nome)
-        puts "Filosofo: #{nome}"
+        puts "Filosofo: #{nome} sentou na mesa!"
         @nome = nome
     end
     
     def jantar(mesa, posicao, garcom)
-        puts "Jantar"
         @garcom = garcom
-        @pauzinho_da_esquerda  = mesa.pauzinho_da_esquerda(posicao)
-        @pauzinho_da_direita = mesa.pauzinho_da_direita(posicao)
+        @pauzinho_da_esquerda  = mesa.pauzinho_da_esquerda posicao
+        @pauzinho_da_direita = mesa.pauzinho_da_direita posicao
     
         pensar
     end
@@ -24,16 +23,19 @@ class Filosofo
         puts "#{@nome} está pensando"
         sleep(rand)
 
-        @garcom.async.pedido_para_comer(Actor.current)
+        @garcom.async.pedido_para_comer Actor.current
     end
     
     def comer
         pegar_pauzinho
+
         puts "#{@nome} está comendo."    
         sleep(rand)
+
         soltar_pauzinho
-        
-        @garcom.async.terminou_de_comer(Actor.current)
+
+        @garcom.async.terminou_de_comer Actor.current
+
         pensar
     end
     
@@ -49,5 +51,9 @@ class Filosofo
 
     def finalize
         soltar_pauzinho
+    end
+
+    def nome
+        @nome
     end
 end

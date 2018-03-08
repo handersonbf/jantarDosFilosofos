@@ -7,21 +7,22 @@ class IniciarJantar
 
     def initialize
         puts "Iniciando o Jantar..........."
-        names = %w{Aristotle Schopenhauer}
 
-        filosofos = names.map { |name| Filosofo.new(name) }
-       
+        nomes = %w{Aristotle Schopenhauer}
+
+        filosofos = nomes.map { |nome| Filosofo.new(nome) }
+
         garcom = Garcom.new
-        mesa  = Mesa.new(filosofos.size)
-        
-        puts "vamos comecar a comer"
-        filosofos.each_with_index do |filosofo, i|
-            puts "O filosofo #{filosofo} ::#{i} está comecando a comerr....."
-            filosofo.async.comer(mesa, i, garcom)
+        mesa = Mesa.new filosofos.size 
+
+        filosofos.each_with_index do |filosofo, i| 
+        filosofo.async.jantar(mesa, i, garcom) 
         end
 
-        sleep 
+        #Eternamente comendo :D sem deadlock
+        sleep
     end
 end
 
 IniciarJantar.new
+

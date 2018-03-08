@@ -19,6 +19,8 @@ class Garcom
     end
 
     def terminou_de_comer(filosofo)
-        @comendo.delete(filosofo)
+        puts "Filosofo #{filosofo.nome} terminou de comer!"
+        
+        @comendo.delete filosofo
     end
 end

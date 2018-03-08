@@ -6,7 +6,6 @@ require_relative 'garcom'
 class Pauzinho 
     
     def initialize
-        puts "Pauzinho criado"
         @mutex = Mutex.new
     end
 

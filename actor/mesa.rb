@@ -5,7 +5,7 @@ require_relative 'pauzinho'
 
 class Mesa
     def initialize(numero_assentos)
-        puts "Mesa com #{numero_assentos} assentos"
+        puts "Uma mesa com #{numero_assentos} assentos"
         @pauzinho  = numero_assentos.times.map { Pauzinho.new }
     end
 
