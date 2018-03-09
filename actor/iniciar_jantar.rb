@@ -16,7 +16,7 @@ class IniciarJantar
         mesa = Mesa.new filosofos.size 
 
         filosofos.each_with_index do |filosofo, i| 
-        filosofo.async.jantar(mesa, i, garcom) 
+            filosofo.async.jantar(mesa, i, garcom) 
         end
 
         sleep
