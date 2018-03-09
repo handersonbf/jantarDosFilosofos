@@ -48,7 +48,7 @@ Que inclusive tem as 3 soluções propostas: Resource hierarchy solution (Soluç
 
 ## Motivação deste projeto
 
-Basicamente estudo do [Actor Model](https://en.wikipedia.org/wiki/Actor_model) utilizando o Ruby e o [Celluloid](https://celluloid.io/) que é um framework de concorrência, e assim em cima desse problema estudar e entender melhor tanto o Actor Model quando a ferramenta em si e assim estudar a sua usabilidade,  aplicabilidade e se divertir também ;D. 
+Basicamente estudo do [Actor Model](https://en.wikipedia.org/wiki/Actor_model) utilizando o Ruby e o [Celluloid](https://celluloid.io/) que é um framework de concorrência, e assim em cima desse problema estudar e entender melhor tanto o Actor Model quanto a ferramenta em si e assim estudar a sua usabilidade,  aplicabilidade e se divertir também ;D. 
 
 ## Instalação
 
