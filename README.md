@@ -71,7 +71,7 @@ Implementação com [Mutex](https://apidock.com/ruby/Mutex) que é utilizado par
 
     /mutex
 
-Solução com Actor Based
+Implementação utilizando o modelo [Actor Model](https://en.wikipedia.org/wiki/Actor_model) e [Celluloid](https://celluloid.io/).
 
     /actor
 
@@ -85,7 +85,7 @@ Solução com Mutex
 
     $ ruby mutex/iniciar_jantar.rb
 
-Solução com Actor Based
+Solução com Actor Model
 
     $ ruby actor/iniciar_jantar.rb
 
