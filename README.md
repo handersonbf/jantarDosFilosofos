@@ -60,6 +60,9 @@ Acessando a pasta do projeto execute:
 
     $ bundle install
 
+Versão do Ruby
+
+    $ ruby 2.5.0p0 (2017-12-25 revision 61468)
 
 ## Estrutura
 
