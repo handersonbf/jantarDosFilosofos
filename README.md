@@ -44,10 +44,11 @@ Os problemas originais da Dijkstra estavam relacionados a dispositivos externos 
 
 Leia mais sobre aqui: [Jantar dos Filósofos - Dining Philosophres](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
 
-## Motivação
 Que inclusive tem as 3 soluções propostas: Resource hierarchy solution (Solução de hierarquia de recursos), Arbitrator solution (Solução do Árbitro) e Chandy/Misra solution (Solução Chandy / Misra).
 
-Pegando esse problema para casos de estudo do modelo de [Actor Model](https://en.wikipedia.org/wiki/Actor_model) utilizando o Ruby e o [Celluloid](https://celluloid.io/) para caso de estudo e aplicabilidade.
+## Motivação deste projeto
+
+Basicamente estudo do [Actor Model](https://en.wikipedia.org/wiki/Actor_model) utilizando o Ruby e o [Celluloid](https://celluloid.io/) que é um framework de concorrência, e assim em cima desse problema estudar e entender melhor tanto o Actor Model quando a ferramenta em si e assim estudar a sua usabilidade,  aplicabilidade e se divertir também ;D. 
 
 ## Instalação
 
