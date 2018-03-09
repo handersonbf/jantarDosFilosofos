@@ -63,11 +63,11 @@ Acessando a pasta do projeto execute:
 
 ## Estrutura
 
-Com DeadLock
+Implementanção "comum" do problema que causa um [DeadLock](https://pt.wikipedia.org/wiki/Deadlock).
 
     /deadlock
 
-Solução com Mutex
+Implementação com [Mutex](https://apidock.com/ruby/Mutex) que é utilizado para concorrência,threads, locks, semáforo etc da API do Ruby.
 
     /mutex
 
